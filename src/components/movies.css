@@ -1,0 +1,26 @@
+.movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem; 
+    margin: 1rem;
+  }
+  
+  .movie {
+    width: 200px; 
+    text-align: center; 
+  }
+  
+  .movie img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie h3 {
+    font-size: 1rem; 
+    color: #333; 
+    margin: 0; 
+  }
+  
