@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# The Sheriff - frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Como levantar el proyecto
 
-## Available Scripts
+Este proyecto consta de dos partes, un frontend y un backend.
 
-In the project directory, you can run:
+- [Repo Front](https://github.com/fabihasu/SheriffFlix)
+- [Repo Back](https://github.com/fabihasu/SheriffFlix-backend)
 
-### `npm start`
+## Levantar backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Clonar proyecto frontend:
+  `git clone https://github.com/fabihasu/SheriffFlix-backend`
+- Instalar dependencias:
+  `npm install`
+- Levantar proyecto: `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Levantar frontend
 
-### `npm test`
+- Clonar proyecto frontend:
+  `git clone https://github.com/fabihasu/SheriffFlix.git`
+- Instalar dependencias:
+  `npm install`
+- Levantar proyecto: `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Probar aplicacion
 
-### `npm run build`
+- Comprobar que la aplicación backend esté corriendo en el puerto 3006
+- Comprobar que la aplicación frontend esté corriendo en el puerto 3000
+- Abrir la página http://localhost:3000/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Listar películas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Solo abrir la página en http://localhost:3000/ se cargará automaticamente las 20 películas más populares
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Buscar películas
 
-### `npm run eject`
+En la parte superior derecha hay un campo de búsqueda, en la cual puedes agregar cualquier nombre y al hacer click en buscar se mostrarán los resultados correspondientes al nombre ingresado
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Detalle de películas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Cuando haces click en alguna película, se redirecionará a una nueva página donde se mostrará más detalles de la película seleccionada
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Agregar a favoritos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Cuando se muestra el detalle de una película se puede hacer click en un botón para agregar la película a tus favoritos.
 
-## Learn More
+## Remover de favoritos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Si la película ya está agregada en la lista de favoritos, entonces el botón cambiará a "Remover de mis favoritos", y al hacer click se eliminará la película de tus favoritos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Ver mis favoritos
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En la parte superior izquierda, al lado del home, hay un texto "Favoritos" el cual al hacer click te redireccionará a la [página de favoritos](http://localhost:3000/favorites)
+En esta página puedes ver la lista de las películas que tienes guardado en favoritos
