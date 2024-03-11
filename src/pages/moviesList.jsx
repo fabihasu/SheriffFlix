@@ -50,7 +50,6 @@ function MoviesList() {
             key={index}
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             title={movie.title}
-            genre={movie.genre_ids}
             releaseDate={movie.release_date}
             rating={movie.vote_average} 
             />
