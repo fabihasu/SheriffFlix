@@ -1,6 +1,7 @@
 import React from 'react';
 import {Routes, Route } from "react-router-dom";
 import './App.css';
+import Login from './pages/login';
 import Header from './components/header';
 import MoviesList from './pages/moviesList';
 import SearchResults from './pages/searchResults';
@@ -13,7 +14,8 @@ function App() {
     <>
       <Header />
       <Routes>
-       <Route path="/" element={<MoviesList />} />
+        <Route path="/" element={<Login />} />
+        <Route path='/movies' element={<MoviesList/>}/>
         <Route path="/search" element={<SearchResults />} />
         <Route path="/movies/:id" element={<MovieDetails />}></Route>
         <Route path="/favorites" element={<Favorites />}></Route>

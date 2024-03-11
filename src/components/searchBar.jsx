@@ -17,12 +17,13 @@ function SearchBar() {
     return (
         <form onSubmit={handleSubmit}>
           <input
+            className="search-input"
             type="text"
-            placeholder="Buscar filmes..."
+            placeholder="Buscar películas..."
             value={input}
             onChange={handleChange}
           />
-          <button type="submit">Buscar</button>
+          <button className="search-button" type="submit">Buscar</button>
         </form>
     );
 }

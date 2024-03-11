@@ -29,6 +29,13 @@ Este proyecto consta de dos partes, un frontend y un backend.
 - Comprobar que la aplicación frontend esté corriendo en el puerto 3000
 - Abrir la página http://localhost:3000/
 
+## Login
+
+Para poder entrar a la aplicación es necesario loguearse con:
+
+- E-mail: `novoemail@example.com`
+- password: `senhasegura123`
+
 ## Listar películas
 
 Solo abrir la página en http://localhost:3000/ se cargará automaticamente las 20 películas más populares
