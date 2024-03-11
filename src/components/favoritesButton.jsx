@@ -7,7 +7,9 @@ import './favoritesButton.css';
 const FavoriteButton = ({ isFavorite, onClick }) => (
 <button className="favorite-btn" onClick={onClick}>
     <FontAwesomeIcon icon={isFavorite ? filledHeart : unfilledHeart} />
-     <span>Adicionar aos Favoritos</span>
+      {isFavorite && <span> Remover de mis Favoritos</span>}
+      {!isFavorite && <span> Agregar a mis Favoritos</span>}
+     
   </button>
 );
 
