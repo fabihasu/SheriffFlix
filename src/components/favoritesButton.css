@@ -1,0 +1,32 @@
+.favorite-btn {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.favorite-btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px; 
+  transition: transform 0.2s; 
+}
+
+.favorite-btn span {
+  font-size: 1rem; 
+  color: #333; 
+
+}
+
+.favorite-btn button .svg-inline--fa {
+  font-size: 1.5rem; 
+  color: #FFA07A;
+}
+
+.favorite-btn button:hover .svg-inline--fa,
+.favorite-btn button:focus .svg-inline--fa {
+  transform: scale(1.1); 
+  color: #DC143C;
+}
+
